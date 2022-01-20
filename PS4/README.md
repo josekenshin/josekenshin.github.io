@@ -6,16 +6,6 @@ El error se encontró al comparar los kernels 9.00 y 9.03. Requerirá una unidad
 
 ESTE REPOSITORIO ES UNA PERSONALIZACIÓN DEL HOST DE KARO REALIZADO PARA NANOSPEEDGAMERYT.
 
-## Patches Included
-The following patches are applied to the kernel:
-1) Allow RWX (read-write-execute) memory mapping (mmap / mprotect)
-2) Syscall instruction allowed anywhere
-3) Dynamic Resolving (`sys_dynlib_dlsym`) allowed from any process
-4) Custom system call #11 (`kexec()`) to execute arbitrary code in kernel mode
-5) Allow unprivileged users to call `setuid(0)` successfully. Works as a status check, doubles as a privilege escalation.
-6) (`sys_dynlib_load_prx`) patch
-7) Disables sysVeri
-
 ## Parches incluidos
 Los siguientes parches se aplican al kernel:
 1) Permitir mapeo de memoria RWX (lectura-escritura-ejecución) (mmap / mprotect)
